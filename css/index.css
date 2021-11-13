@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;  /*重置所有html元素内外边距为0！*/
+}
+ul{
+     list-style: none;
+}
+a{
+    display: block;  /* 
+    变块级元素
+    占据一定矩形空间，可以通过设置高度、宽度、内外边距等属性，来调整的这个矩形的样子；
+*/
+    text-decoration: none;
+    color:#fff;
+}
+
+.wrap{
+    width: 220px;
+    height: 360px;
+    margin: 20px auto;
+    background-color: #a09c96;
+    overflow: hidden;  /*隐藏溢出部分*/
+}
+
+.wrap .nav ul a{
+    font-size: 18px;
+    font-family: '微软雅黑';
+    text-indent: 53px;  /*首行缩进*/
+}
+
+.wrap .nav ul{
+    margin-top: 25px;
+    line-height: 60px;
+}
+.wrap .nav ul li{
+    width: 220px;
+    text-indent: 20px;
+}
+
+.wrap .nav ul .u-li1{
+     background: none;
+}
+.wrap .nav ul .u-li2{
+    background: none;
+}
+.wrap .nav ul .u-li3{
+    background: none;
+}
+.wrap .nav ul .u-li4{
+    background: none;
+}
+
+
+
+img.first1{
+    margin: 0  auto;
+    display: block;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;  /*这三行代码似乎没用*/
+    width: 250px;
+    height: 300px;
+    border-radius: 100%;
+}
+img.first1:hover{
+    transform: rotate(180deg);  
+    -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);  /*这四行代码似乎没用*/
+}
+
