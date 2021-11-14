@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <!--引入-->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css" >
+    <style>
+        a:link{
+            /*正常链接样式*/
+            color: black;
+            text-decoration: underline;
+        }
+        a:visited{
+            /*已经访问过*/
+            color: gray;
+            text-decoration: none;
+        }
+        a:hover{
+            /*悬浮鼠标*/
+            color:aqua;
+            text-decoration: line-through;
+        }
+        a:active{
+            /*要点击了*/
+            color: red;
+            text-decoration: none;
+        }
+    </style>
+         </head>
+<body>
+ 　<!--navbar是nav导航标签的一个基类必须添加，navbar-default是对导航条样式的添加-->
+<nav class="navbar navbar-default" style="background:pink; ">
+   <!--导航具体内容要放到一个容器里增加一定边距，看起来好看-->
+   <div class="container" style="color: aqua; background:linear-gradient(white,pink);">
+        <!--导航条的头部（就是中北大学校徽那个地方）-->
+     <div class="navbar-header" >
+         <img width="120" height="50"  src="images/bird.jpg" />
+     </div>
+     <!--导航链接部分 collapse,nav-collapse是说导航条是一个折叠导航条-->
+     <div class="collapse navbar-collapse">
+            <!--真正的链接部分是需要添加nav navbar-nav类的-->
+           <ul class="nav navbar-nav">
+               <li><a href="#"><button style="border:transparent;color:#E36204 ;font-family: '微软雅黑';" onClick="MyContent()">首页</button></a></li>
+               <script type="text/javascript">
+                function  MyContent(){
+                    alert("技术有限,学的过杂,杂乱不堪,还请留步。");
+                    alert("请放心，持续更新中，也可能是佛性更新。并且事情太多了。");
+                    window.location.href="HTML/first.html";
+                }
+               </script>
+                <li><a href="#">where</a></li>
+                <li><a href="#">Life_value</a></li>
+                <li><a href="#">information</a></li>
+                <li><a href="#">life</a></li>
+                <li><a href="#">Yourself</a></li>
+           </ul>
+            <!-- 靠右的导航条登陆注册  navbar-right-->
+            <ul class="nav navbar-nav navbar-right">
+        
+                <li><a href="#">Author website</a></li>
+            </ul>
+     </div>
+
+   </div>
+    
+</nav>
+    
+    <div style="display: flex;flex-direction: column;" >
+        <div align="center" >
+            <img class="first1" src="images/will.jpg"/>
+            <span style="color: #07BDF4;text-shadow: 2px 2px 2px blue;font-size: 25px;">一世界,一心念</span>
+            <p style="font-size: 16px;word-spacing: 3px;">最最遮心的是邪恶,但是所有<strong>无知愚蠢罪恶肮脏</strong>的念头充满了空气。应景,一念地狱!</p>
+            <p style="font-size: 16px;color: red;font-weight: bold;text-decoration: underline;">我诺每一新愿,我想每个晴天,领悟随往随离的清院。</p>
+        </div>
+    </div>
+       <br><br><br>
+        
+    	<p style="text-align: center;">CopyRight&copy;believe_withdral_evil_To acquire_realheart</p>
+</body>
+</html>
